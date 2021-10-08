@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="다섯"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        >
+
+        <Button
+            android:id="@+id/back_connect_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="등 연결 시작"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginRight="20dp"
+            />
+
+        <Button
+            android:id="@+id/fsr_connect_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="방석 연결 시작"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/connect"
+        android:gravity="center"
+        android:padding="20dp"
+        >
+
+        <Chronometer
+            android:id="@+id/chronometer_view"
+            android:layout_width="310dp"
+            android:layout_height="310dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/circle"
+            android:textColor="@color/white"
+            android:textSize="45dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle"
+        android:layout_marginTop="-2dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/commentVal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="바른 자세를 유지 하세요!"
+            android:textColor="@color/white"
+            android:textSize="27sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/comment"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        >
+
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="start"
+            android:textColor="@color/white"
+            android:layout_marginRight="20dp"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="stop"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

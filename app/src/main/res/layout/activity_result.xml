@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULT"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="당신의 바른 자세"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_below="@+id/title"
+        />
+
+    <LinearLayout
+        android:id="@+id/circle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:background="@drawable/circle"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="343"
+            android:textSize="35dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resultComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circle"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/resultCommentVal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginBottom="5sp"
+            android:text="자세 결과"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultComment"
+        android:layout_marginLeft="27dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            >
+
+            <TextView
+                android:id="@+id/legleft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="왼다리 꼬기 : "
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/leg_numl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="n회"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/legright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오른다리 꼬기 : "
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/leg_numr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="n회"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ex2"
+            android:layout_below="@+id/ex1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/lr_l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="왼쪽 기움 : "
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/lr_numl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="n회"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/lr_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오른쪽 기움 : "
+                android:textColor="@color/white"
+                android:layout_marginLeft="7dp"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/lr_numr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="n회"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ex3"
+            android:layout_below="@+id/ex2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            >
+
+            <TextView
+                android:id="@+id/fb_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="앞으로 기움 : "
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/fb_numf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="n회"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/fb_b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="뒤로 기움 : "
+                android:textColor="@color/white"
+                android:layout_marginLeft="6dp"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/fb_numb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="n회"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:gravity="right">
+
+            <Button
+                android:id="@+id/but_leg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="운동 추천"
+                android:layout_margin="1dp"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/but_lr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="운동 추천"
+                android:layout_margin="1dp"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/but_fb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:layout_margin="1dp"
+                android:text="운동 추천"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/group"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/restart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:text="restart"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+</RelativeLayout>
